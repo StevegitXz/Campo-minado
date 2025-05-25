@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Campo Minado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Campo Minado</h1>
+  <div id="inicio">
+    <h2>Bem-vindo ao Campo Minado das Matrizes!</h2>
+    <p>Você enfrentará <strong>5 fases</strong>, cada uma com bombas distribuídas segundo uma <strong>lei de formação ou parâmetros diferente</strong>.</p>
+    <p>Evite clicar nas bombas e descubra todos os campos seguros para vencer!</p>
+    <p>Criadores: Estevão Emanuel, Hélio Arthur, Pedro Lucas e Renato Souza.</p>
+    <button id="startButton">Iniciar Jogo</button>
+  </div>
+<div id="conteudo">
+  <h2>Sobre o Jogo</h2>
+  <p>
+    Você é um especialista em desarmamento de 
+    <strong>bombas matemáticas</strong>. Cada fase é um desafio lógico, 
+    onde as bombas seguem uma <strong>lei de formação</strong> diferente.
+  </p>
+  <p>Raciocine, identifique padrões e avance... se sobreviver!</p>
+
+  <h3>Como Jogar</h3>
+  <ul>
+    <li>Clique nos campos para revelar espaços seguros.</li>
+    <li>Se clicar em uma bomba... 💥 Game Over!</li>
+    <li>Descubra todos os campos livres para vencer a fase.</li>
+    <li>Cada fase tem uma lógica diferente para a posição das bombas.</li>
+  </ul>
+
+  <h3>Curiosidades</h3>
+  <p>
+    <em>Sabia que o Campo Minado é usado até hoje para treinar raciocínio lógico 
+    e tomada de decisão sob pressão?</em>
+  </p>
+  <p>
+    <strong>Dica:</strong> Observe os padrões. Nem sempre as bombas estão tão aleatórias quanto parecem...
+  </p>
+
+  <h3>Equipe de Desenvolvimento</h3>
+  <p><strong>Estevão Emanuel (Nero)</strong> — Front-end e Design</p>
+  <p><strong>Hélio Arthur</strong> — Apoio lógico e estrutura</p>
+  <p><strong>Pedro Lucas</strong> — Lógica e algoritmos</p>
+  <p><strong>Renato Souza</strong> — Gerente e programador</p>
+
+  <h3>Agradecimentos</h3>
+  <p>
+    Projeto desenvolvido para a disciplina de 
+    <strong>Matemática II</strong> no IFAC. Nosso objetivo é unir lógica, diversão e aprendizagem.
+  </p>
+  <p>Obrigado aos colegas e professores que apoiaram este trabalho!</p>
+
+  <footer style="margin-top: 15px; opacity: 0.7;">
+    <p>© 2025 — Desenvolvido por Nero & Equipe — IFAC</p>
+  </footer>
+</div>
+  <div id="game"></div>
+  <p id="status"></p>
+  <p id="hint" style="margin-bottom: 10px;"></p>
+  <button id="retry" style="display: none;">🔁 Tentar novamente</button>
+  <script src="script.js"></script>
+</body>
+</html>

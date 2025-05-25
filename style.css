@@ -1,0 +1,230 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #1f1f1f, #3a3a3a);
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Texto dentro da tela de início */
+#inicio h1, 
+#inicio h2, 
+#inicio h3 {
+  color: #ffd700;
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+#inicio p {
+  color: #e0e0e0;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+#inicio ul {
+  list-style: none;
+  padding: 0;
+}
+
+#inicio ul li {
+  background-color: rgba(255, 215, 0, 0.1);
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #f5f5f5;
+  transition: background-color 0.3s;
+}
+
+#inicio ul li:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+}
+
+#inicio strong {
+  color: #ffd700;
+}
+
+#inicio em {
+  color: #cccccc;
+  font-style: italic;
+}
+
+/* Tela de início */
+/* Tela de início estilizada */
+#inicio {
+  max-width: 500px;
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#inicio:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+
+/* Conteudo */
+
+#conteudo {
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 800px;
+  margin: 50px auto;
+  color: #f0f0f0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#conteudo:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+
+#conteudo h2, #conteudo h3 {
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff;
+  margin-bottom: 10px;
+}
+
+#conteudo p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#conteudo strong {
+  color: #ffcc00;
+}
+
+#conteudo em {
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+#conteudo ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+#conteudo ul li {
+  margin-bottom: 8px;
+}
+
+#conteudo footer {
+  text-align: center;
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+/* Botões */
+button {
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #e6be00;
+}
+
+/* Campo de jogo */
+#game {
+  display: none;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+/* Células */
+.cell {
+  width: 45px;
+  height: 45px;
+  background-color: #444;
+  border: 2px solid #666;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 45px;
+  user-select: none;
+  border-radius: 6px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.cell:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.cell.revealed {
+  background-color: #28a745;
+  cursor: default;
+}
+
+.cell.mine {
+  background-color: #dc3545;
+  color: white;
+}
+
+#status, #hint, #retry {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Mensagens */
+#status {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+#hint {
+  font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .cell {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+  }
+
+  #game {
+    gap: 14px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
