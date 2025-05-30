@@ -690,155 +690,49 @@ body::before {
 /* Mobile grande (480px - 767px) */
 @media (max-width: 767px) and (min-width: 480px) {
   .container {
-    padding: 8px;
-  }
-
-  .header {
-    margin-bottom: 12px;
-  }
-
-  .header h1 {
-    font-size: clamp(1.4rem, 6vw, 2.4rem);
-  }
-
-  .subtitle {
-    font-size: 0.8rem;
-  }
-
-  .welcome-screen {
-    padding: 20px 15px;
-    margin: 10px;
-    max-width: 400px;
-  }
-
-  .welcome-screen h2 {
-    font-size: 1.2rem;
-    margin-bottom: 12px;
-  }
-
-  .welcome-screen p {
-    font-size: 0.85rem;
-    margin-bottom: 10px;
-  }
-
-  .credits {
-    font-size: 0.8rem;
-  }
-
-  .game-info {
-    gap: 15px;
-    margin-bottom: 12px;
-  }
-
-  .info-card {
-    min-width: 85px;
-    padding: 10px 15px;
-  }
-
-  .info-label {
-    font-size: 0.65rem;
-  }
-
-  .info-value {
-    font-size: 1rem;
-  }
-
-  .game-grid {
-    margin: 12px auto;
-    padding: 15px;
-    gap: 3px;
-  }
-
-  .cell {
-    width: 42px;
-    height: 42px;
-    font-size: 16px;
-  }
-
-  .hint-box {
-    font-size: 0.8rem;
-    padding: 12px;
-    margin: 12px;
-    max-width: 380px;
-  }
-
-  .hint-icon {
-    font-size: 1.2rem;
-  }
-
-  .status-message {
-    font-size: 1rem;
-    padding: 10px;
-    margin: 15px 0;
-  }
-
-  .btn {
-    padding: 10px 20px;
-    font-size: 0.85rem;
-    margin: 8px;
-  }
-
-  .about-section {
-    padding: 20px;
-    margin: 20px 10px;
-  }
-
-  .about-section h3 {
-    font-size: 1.1rem;
-  }
-}
-
-/* Mobile pequeno (até 479px) */
-@media (max-width: 479px) {
-  .container {
     padding: 5px;
   }
 
   .header {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .header h1 {
-    font-size: clamp(1.2rem, 7vw, 2rem);
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
   }
 
   .subtitle {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .welcome-screen {
     padding: 15px 12px;
     margin: 8px;
-    border-radius: 15px;
+    max-width: 95vw;
   }
 
   .welcome-screen h2 {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-  }
-
-  .welcome-screen p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 8px;
   }
 
-  .credits {
+  .welcome-screen p {
     font-size: 0.75rem;
-    margin-top: 15px;
-    padding-top: 15px;
+    margin-bottom: 6px;
+  }
+
+  .credits {
+    font-size: 0.7rem;
   }
 
   .game-info {
-    gap: 12px;
-    margin-bottom: 10px;
-    flex-direction: row;
-    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 8px;
   }
 
   .info-card {
-    min-width: 80px;
-    padding: 8px 12px;
-    border-radius: 12px;
+    min-width: 70px;
+    padding: 6px 12px;
   }
 
   .info-label {
@@ -846,95 +740,107 @@ body::before {
   }
 
   .info-value {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .game-grid {
-    margin: 10px auto;
+    margin: 8px auto;
     padding: 12px;
     gap: 2px;
-    border-radius: 12px;
+    max-width: 95vw;
   }
 
   .cell {
-    width: 38px;
-    height: 38px;
-    font-size: 15px;
-    border-radius: 6px;
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
   }
 
   .hint-box {
-    font-size: 0.75rem;
-    padding: 10px;
-    margin: 10px 5px;
-    border-radius: 12px;
+    font-size: 0.7rem;
+    padding: 8px;
+    margin: 8px 5px;
+    max-width: 95vw;
   }
 
   .hint-icon {
-    font-size: 1.1rem;
-    margin-right: 8px;
+    font-size: 1rem;
   }
 
   .status-message {
-    font-size: 0.9rem;
-    padding: 8px;
-    margin: 12px 0;
-    border-radius: 8px;
+    font-size: 0.85rem;
+    padding: 6px;
+    margin: 8px 0;
   }
 
   .btn {
     padding: 8px 16px;
-    font-size: 0.8rem;
-    margin: 6px;
-    border-radius: 40px;
+    font-size: 0.75rem;
+    margin: 5px;
   }
 
   .about-section {
     padding: 15px;
     margin: 15px 5px;
-    border-radius: 15px;
   }
 
   .about-section h3 {
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-
-  .about-section li {
-    font-size: 0.8rem;
-    margin-bottom: 6px;
+    font-size: 0.95rem;
   }
 }
 
-/* Extra pequeno (até 360px) */
-@media (max-width: 360px) {
+/* Mobile pequeno (até 479px) */
+@media (max-width: 479px) {
+  .container {
+    padding: 3px;
+  }
+
+  .header {
+    margin-bottom: 5px;
+  }
+
   .header h1 {
-    font-size: clamp(1rem, 8vw, 1.8rem);
+    font-size: clamp(1rem, 6vw, 1.5rem);
   }
 
   .subtitle {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 
   .welcome-screen {
-    padding: 12px 10px;
+    padding: 12px 8px;
+    margin: 5px;
+    border-radius: 12px;
+    max-width: 98vw;
   }
 
   .welcome-screen h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
   }
 
   .welcome-screen p {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+  }
+
+  .credits {
+    font-size: 0.65rem;
+    margin-top: 10px;
+    padding-top: 10px;
   }
 
   .game-info {
     gap: 8px;
+    margin-bottom: 5px;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .info-card {
-    min-width: 70px;
-    padding: 6px 10px;
+    min-width: 65px;
+    padding: 4px 8px;
+    border-radius: 8px;
   }
 
   .info-label {
@@ -942,27 +848,158 @@ body::before {
   }
 
   .info-value {
-    font-size: 0.9rem;
-  }
-
-  .cell {
-    width: 34px;
-    height: 34px;
-    font-size: 14px;
+    font-size: 0.8rem;
   }
 
   .game-grid {
-    padding: 10px;
+    margin: 5px auto;
+    padding: 8px;
+    gap: 1px;
+    border-radius: 10px;
+    max-width: 98vw;
+  }
+
+  .cell {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+    border-radius: 5px;
   }
 
   .hint-box {
-    font-size: 0.7rem;
-    padding: 8px;
+    font-size: 0.65rem;
+    padding: 6px;
+    margin: 5px 3px;
+    border-radius: 10px;
+    max-width: 98vw;
+  }
+
+  .hint-icon {
+    font-size: 0.9rem;
+    margin-right: 5px;
+  }
+
+  .status-message {
+    font-size: 0.75rem;
+    padding: 5px;
+    margin: 8px 0;
+    border-radius: 6px;
   }
 
   .btn {
-    padding: 6px 14px;
+    padding: 6px 12px;
+    font-size: 0.7rem;
+    margin: 4px;
+    border-radius: 30px;
+  }
+
+  .about-section {
+    padding: 12px;
+    margin: 10px 3px;
+    border-radius: 12px;
+  }
+
+  .about-section h3 {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  .about-section li {
+    font-size: 0.7rem;
+    margin-bottom: 4px;
+  }
+}
+
+/* Extra pequeno (até 360px) */
+@media (max-width: 360px) {
+  .container {
+    padding: 2px;
+  }
+
+  .header {
+    margin-bottom: 3px;
+  }
+
+  .header h1 {
+    font-size: clamp(0.9rem, 7vw, 1.3rem);
+  }
+
+  .subtitle {
+    font-size: 0.6rem;
+  }
+
+  .welcome-screen {
+    padding: 10px 6px;
+    margin: 3px;
+    max-width: 99vw;
+  }
+
+  .welcome-screen h2 {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+
+  .welcome-screen p {
+    font-size: 0.65rem;
+    margin-bottom: 3px;
+  }
+
+  .credits {
+    font-size: 0.6rem;
+  }
+
+  .game-info {
+    gap: 6px;
+    margin-bottom: 3px;
+  }
+
+  .info-card {
+    min-width: 60px;
+    padding: 3px 6px;
+  }
+
+  .info-label {
+    font-size: 0.5rem;
+  }
+
+  .info-value {
     font-size: 0.75rem;
+  }
+
+  .game-grid {
+    margin: 3px auto;
+    padding: 6px;
+    gap: 1px;
+    max-width: 99vw;
+  }
+
+  .cell {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .hint-box {
+    font-size: 0.6rem;
+    padding: 5px;
+    margin: 3px 2px;
+    max-width: 99vw;
+  }
+
+  .hint-icon {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    font-size: 0.65rem;
+    margin: 3px;
+  }
+
+  .status-message {
+    font-size: 0.7rem;
+    padding: 4px;
+    margin: 5px 0;
   }
 }
 
