@@ -5,62 +5,98 @@
   <title>Campo Minado</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Campo Minado</h1>
-  <div id="inicio">
-    <h2>Bem-vindo ao Campo Minado das Matrizes!</h2>
-    <p>Você enfrentará <strong>5 fases</strong>, cada uma com bombas distribuídas segundo uma <strong>lei de formação ou parâmetros diferente</strong>.</p>
-    <p>Evite clicar nas bombas e descubra todos os campos seguros para vencer!</p>
-    <p>Criadores: Estevão Emanuel, Hélio Arthur, Pedro Lucas e Renato Souza.</p>
-    <button id="startButton">Iniciar Jogo</button>
+  <div class="container">
+    <div class="header">
+      <h1>Campo Minado</h1>
+      <p class="subtitle">Das Matrizes Matemáticas</p>
+    </div>
+
+    <!-- Tela de início -->
+    <div id="welcomeScreen" class="welcome-screen">
+      <h2>🎯 Bem-vindo ao Desafio das Matrizes!</h2>
+      <p>Você enfrentará <strong>5 fases épicas</strong>, cada uma com bombas distribuídas segundo uma <strong>lei de
+          formação matemática única</strong>.</p>
+      <p>Use sua lógica e conhecimento matemático para identificar padrões, evitar as bombas e conquistar todos os
+        campos seguros!</p>
+      <p><strong>⚡ Cada fase é um novo desafio lógico!</strong></p>
+
+      <div class="credits">
+        <p><strong>Criado por:</strong> Estevão Emanuel, Hélio Arthur, Pedro Lucas e Renato Souza</p>
+        <p>IFAC - Matemática II</p>
+      </div>
+
+      <button id="startButton" class="btn">🚀 Iniciar Missão</button>
+    </div>
+
+    <!-- Container do jogo -->
+    <div id="gameContainer" class="game-container">
+      <div class="game-info">
+        <div class="info-card">
+          <div class="info-label">Fase</div>
+          <div id="currentPhase" class="info-value">1</div>
+        </div>
+        <div class="info-card">
+          <div class="info-label">Progresso</div>
+          <div id="progress" class="info-value">0/5</div>
+        </div>
+        <div class="info-card">
+          <div class="info-label">Status</div>
+          <div id="gameStatus" class="info-value">Em jogo</div>
+        </div>
+      </div>
+
+      <div id="hintBox" class="hint-box">
+        <span class="hint-icon">💡</span>
+        <span id="hintText">Clique para começar sua primeira missão!</span>
+      </div>
+
+      <div id="gameGrid" class="game-grid"></div>
+
+      <div id="statusMessage" class="status-message" style="display: none;"></div>
+
+      <button id="retryButton" class="btn" style="display: none;">🔄 Nova Tentativa</button>
+      <button id="nextPhaseButton" class="btn" style="display: none;">➡️ Próxima Fase</button>
+    </div>
+
+    <!-- Seção sobre o jogo -->
+    <div id="aboutSection" class="about-section">
+      <h3>🎮 Como Jogar</h3>
+      <ul>
+        <li><strong>Clique</strong> nos campos para revelar espaços seguros</li>
+        <li>Se clicar em uma bomba... <strong>💥 Game Over!</strong></li>
+        <li>Descubra todos os campos livres para vencer a fase</li>
+        <li>Cada fase segue uma <strong>lei matemática diferente</strong></li>
+      </ul>
+
+      <h3>🧮 As Fases</h3>
+      <ul>
+        <li><strong>Fase 1:</strong> Diagonais - bombas nas diagonais principal e secundária</li>
+        <li><strong>Fase 2:</strong> Linhas pares - bombas em todas as linhas pares</li>
+        <li><strong>Fase 3:</strong> Matriz triangular - bombas na parte superior</li>
+        <li><strong>Fase 4:</strong> Função quadrática - bombas onde i² - 3j < 0</li>
+        <li><strong>Fase 5:</strong> Padrão complexo - múltiplas condições matemáticas</li>
+      </ul>
+
+      <h3>💡 Dicas Estratégicas</h3>
+      <ul>
+        <li>Observe os <strong>padrões matemáticos</strong> de cada fase</li>
+        <li>Use o conhecimento de <strong>matrizes e coordenadas</strong></li>
+        <li>Pense logicamente antes de cada clique</li>
+        <li>As bombas nunca são aleatórias - sempre seguem a lei da fase!</li>
+      </ul>
+
+      <h3>👥 Equipe de Desenvolvimento</h3>
+      <ul>
+        <li><strong>Estevão Emanuel (Nero)</strong> — Front-end e Design</li>
+        <li><strong>Hélio Arthur</strong> — Apoio lógico e estrutura</li>
+        <li><strong>Pedro Lucas</strong> — Lógica e algoritmos</li>
+        <li><strong>Renato Souza</strong> — Gerente e programador</li>
+      </ul>
+    </div>
   </div>
-<div id="conteudo">
-  <h2>Sobre o Jogo</h2>
-  <p>
-    Você é um especialista em desarmamento de 
-    <strong>bombas matemáticas</strong>. Cada fase é um desafio lógico, 
-    onde as bombas seguem uma <strong>lei de formação</strong> diferente.
-  </p>
-  <p>Raciocine, identifique padrões e avance... se sobreviver!</p>
-
-  <h3>Como Jogar</h3>
-  <ul>
-    <li>Clique nos campos para revelar espaços seguros.</li>
-    <li>Se clicar em uma bomba... 💥 Game Over!</li>
-    <li>Descubra todos os campos livres para vencer a fase.</li>
-    <li>Cada fase tem uma lógica diferente para a posição das bombas.</li>
-  </ul>
-
-  <h3>Curiosidades</h3>
-  <p>
-    <em>Sabia que o Campo Minado é usado até hoje para treinar raciocínio lógico 
-    e tomada de decisão sob pressão?</em>
-  </p>
-  <p>
-    <strong>Dica:</strong> Observe os padrões. Nem sempre as bombas estão tão aleatórias quanto parecem...
-  </p>
-
-  <h3>Equipe de Desenvolvimento</h3>
-  <p><strong>Estevão Emanuel (Nero)</strong> — Front-end e Design</p>
-  <p><strong>Hélio Arthur</strong> — Apoio lógico e estrutura</p>
-  <p><strong>Pedro Lucas</strong> — Lógica e algoritmos</p>
-  <p><strong>Renato Souza</strong> — Gerente e programador</p>
-
-  <h3>Agradecimentos</h3>
-  <p>
-    Projeto desenvolvido para a disciplina de 
-    <strong>Matemática II</strong> no IFAC. Nosso objetivo é unir lógica, diversão e aprendizagem.
-  </p>
-  <p>Obrigado aos colegas e professores que apoiaram este trabalho!</p>
-
-  <footer style="margin-top: 15px; opacity: 0.7;">
-    <p>© 2025 — Desenvolvido por Nero & Equipe — IFAC</p>
-  </footer>
-</div>
-  <div id="game"></div>
-  <p id="status"></p>
-  <p id="hint" style="margin-bottom: 10px;"></p>
-  <button id="retry" style="display: none;">🔁 Tentar novamente</button>
   <script src="script.js"></script>
 </body>
+
 </html>
