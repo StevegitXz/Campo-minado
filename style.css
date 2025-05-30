@@ -612,3 +612,101 @@ body::before {
     transform: rotate(360deg);
   }
 }
+
+/* Responsividade e destaque do campo minado */
+@media (max-width: 1024px) {
+  .game-grid {
+    gap: 4px;
+  }
+  .cell {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: clamp(1.8rem, 6vw, 3.5rem);
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .welcome-screen {
+    padding: 30px 20px;
+  }
+
+  .hint-box {
+    padding: 15px;
+  }
+
+  .game-info {
+    gap: 20px;
+  }
+
+  .info-card {
+    min-width: 100px;
+    padding: 10px 15px;
+  }
+
+  .game-grid {
+    gap: 4px;
+    padding: 15px;
+  }
+
+  .cell {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: clamp(1.5rem, 7vw, 2.8rem);
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .welcome-screen {
+    padding: 25px 15px;
+  }
+
+  .hint-box {
+    padding: 12px;
+  }
+
+  .game-info {
+    gap: 15px;
+  }
+
+  .info-card {
+    min-width: 90px;
+    padding: 8px 12px;
+  }
+
+  .game-grid {
+    gap: 3px;
+    padding: 10px;
+  }
+
+  .cell {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .status-message {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
